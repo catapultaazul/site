@@ -1,23 +1,35 @@
 html {
-    background-color: rgb(94, 3, 78);
-    color: rgb(230, 128, 81);
-    font-size: 100%;
+    background-color: purple;
+    font-size: 130%;
+    color:chartreuse;
 }
 
-.link a{
+.main-nav{
+    width: 100%;
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav__items{
+    margin-left: 20px;
+    margin-right: 10px;
+    list-style: none;
     text-decoration: none;
-    color: rgb(94, 3, 78);
 }
 
-#ola {
-    color:rgb(2, 136, 125);
+a{
+    text-decoration: none;
+    color:chartreuse;
 }
 
-.texto {
+a:hover{
+    color:rgb(85, 167, 3);
+}
+
+.texto{
     width: 70vw;
-    margin-left: 18vw;
+    margin-left: 18%;
 }
 
-.link a:hover{
-    color: rgb(128, 83, 0);
-}
