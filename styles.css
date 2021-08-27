@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(94, 3, 78);
+    color: rgb(230, 128, 81);
+    font-size: 20px;
+    
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 8px;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(255, 145, 0);
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+#ola {
+    color:rgb(1, 110, 101);
+}
+
+.texto {
+    margin-top: 10%;
+    margin-left:20%;
+    margin-right: 25%;
+}
+
+.link a:hover{
+    color: rgb(128, 83, 0);
+}
