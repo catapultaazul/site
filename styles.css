@@ -1,7 +1,18 @@
 html {
     background-color: purple;
-    font-size: 130%;
+    font-size: 18px;
     color:chartreuse;
+}
+
+body{
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.header{
+    background-color: chartreuse;
+    border: 8px solid chartreuse;
+
 }
 
 .main-nav{
@@ -10,18 +21,20 @@ html {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+   
 }
 
 .main-nav__items{
-    margin-left: 20px;
-    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
     list-style: none;
     text-decoration: none;
+    color: purple;
 }
 
 a{
     text-decoration: none;
-    color:chartreuse;
+    color: purple;
 }
 
 a:hover{
