@@ -1,62 +1,320 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Catapultasite">
-        <meta name="robots" content="index, follow">
-        <title>Catapultasite</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/5de528e564.js" crossorigin="anonymous"></script>
-        <style>
-            html{
-                background-image: url(assets/fundo.jpg);
-                background-attachment: fixed;
-                background-size: cover;
-            }
-        </style>
-    </head>
-    
+<html lang="pt_BR">
 
-    <body>
-        <header class="header">
-            <ul class="main-nav">
-                <li class="main-nav__items">
-                    <i class="fas fa-envelope"></i> 
-                    <a href="mailto:lucasguilheme.31@gmail.com">E-mail</a>
-                </li>
-                <li class="main-nav__items"> 
-                    <i class="fab fa-github"></i> 
-                    <a href="https://github.com/cataputltaazul">GitHub</a>
-                </li>
-                <li class="main-nav__items">
-                    <i class="fas fa-project-diagram"></i>
-                    <a href ="https://github.com/cataputltaazul">Projetos</a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <article class="texto">
-                <h1>Olá, sou Lucas Moreira</h1>
-                <h3>Programador</h3>
-                <p>Apaixonado por tecnologia desde sempre, 
-                    decidi cursar Direito, mesmo tendo um fascínio diferente pelo mundo da informática.</p>
-                <p>Anos depois, por influência de amigos, comecei a estudar sobre programação e estou amando tudo! 
-                Já aprendi algumas coisas no começo da minha jornada, 
-                mas pretendo conhecer muito mais desse novo e incrível mundo.</p>
-                <p> E é por isso que estou mudando de área, pois tenho certeza que me encontrei como um programador!</p>
-                <p>Procurando uma pessoa desenvolvedora de software? Vamos conversar! lucasguilheme.31@gmail.com </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OriginSix</title>
 
-                <h1>Cursos prestados</h1>
-                    <h3>Platzi</h3>
-                    <ul>
-                        <li>Curso de programação básica</li>
-                        <li>Curso de HTML e CSS</li>
-                        <li>Curso de Git e GitHub</li>
-                        <li>Curso de Desenvolvimento de Web</li>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header id="header" class='scroll'>
+        <nav class="container">
+            <a class='logo' href="#">Lucas<span> Moreira</span></a>
+            <!-- MENU -->
+            <div class='menu'>
+                <ul class="grid">
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#knowledge">Conhecimento</a></li>
+                    <li><a class="title" href="#courses">Cursos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Sobre mim</h2>
+                    <p>Olá, meu nome é Lucas Moreira e sou um desenvolvedor front-end.
+                    </p>
+                    <br />
+                    <p>
+                        Apaixonado por tecnologia desde sempre, cursei Direito na UFPE aos 18 anos após estudar 4 anos
+                        como
+                        Técnico
+                        em Mecânica do IFPE.
+                    </p>
+                    <br />
+                    <p>
+                        Anos depois, por influência de amigos, decidi estudar sobre programação e desenvolvimento web.
+                        Nessa
+                        aventura, me descobri como um programador. No começo dessa jornada já aprendi bastante, mas
+                        ainda
+                        quero aprender muito mais!
+                    </p>
+                    <br />
+                    <p>
+                        Procurando uma pessoa desenvolvedora front-end? Vamos conversar!
+                    </p>
+                </div>
+                <div class="portfolio grid">
+                    <a href="https://api.whatsapp.com/send?phone=+5581995228060&text=Olá, Lucas!" class="button"
+                        target="_blank">
+                        <i class="icon-github"></i>
+                        Dê uma olhada no meu portifólio!
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="divider-1"></div>
+
+        <!-- KNOWLEDGE -->
+        <section class="section" id="knowledge">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Conhecimentos</h2>
+                    <p class="subtitle">
+                        Estudando programação desde 2021, estou inteiramente dedicado a esta área e aprendendo novos
+                        métodos de desenvolvimento todos os dias. Estes são alguns dos meus conhecimentos já adquiridos.
+                    </p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        <i class="icon-html-five"></i>
+                        <h3 class="title">HTML</h3>
+                        <p>
+                            Apresento um certo domínio do HTML, um dos meus meios favoritos para programar.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-css3"></i>
+                        <h3 class="title">CSS</h3>
+                        <p>
+                            Essencial para estilização de projetos, também conheço bastante sobre CSS.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-javascript"></i>
+                        <h3 class="title">Javascript</h3>
+                        <p>
+                            O cérebro do desenvolvimento front-end, estou atualmente começando a me aprofundar no
+                            Javascript.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icon-github"></i>
+                        <h3 class="title">Git e GitHub</h3>
+                        <p>
+                            De suma importância para quem deseja compartilhar seu código e crescer junto à comunidade, o
+                            Git e o GitHub são tecnologias que tenho domínio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-2"></div>
+
+        <!-- COURSES -->
+        <section class="section" id="courses">
+            <div class="container">
+                <header>
+                    <h2 class="title">Cursos prestados</h2>
+                </header>
+                <div class="courses swiper">
+                    <div class="swiper-wrapper">
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Bootcamp HTML Web Developer
+                                </p>
+                                <cite>
+                                    <img src="assets/dio.png" alt="Foto do site Digital Innovation One">
+                                    Digital Innovation One
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Curso de Git e GitHub
+                                </p>
+                                <cite>
+                                    <img src="https://media-exp1.licdn.com/dms/image/C560BAQHGhmUtkni2GQ/company-logo_200_200/0/1622072579516?e=2159024400&v=beta&t=RzB4YwnkTfo3dGprCkxtsedCgDA5hmhdBH07pvlKVog"
+                                        alt="Foto do curso Platzi">
+                                    Platzi
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Programação para internet com JavaScript
+                                </p>
+                                <cite>
+                                    <img src="assets/dio.png" alt="Foto do site Digital Innovation One">
+                                    Digital Innovation One
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Curso de Programação básica
+                                </p>
+                                <cite>
+                                    <img src="https://media-exp1.licdn.com/dms/image/C560BAQHGhmUtkni2GQ/company-logo_200_200/0/1622072579516?e=2159024400&v=beta&t=RzB4YwnkTfo3dGprCkxtsedCgDA5hmhdBH07pvlKVog"
+                                        alt="Foto do curso Platzi">
+                                    Platzi
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    O guia estelar de Javascript
+                                </p>
+                                <cite>
+                                    <img src="assets/rocketseat.jpeg" alt="Foto do website Rocketseat">
+                                    Rocketseat
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Nlw together - Mission: Origin
+                                </p>
+                                <cite>
+                                    <img src="assets/rocketseat.jpeg" alt="Foto do website Rocketseat">
+                                    Rocketseat
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="course swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Construindo páginas de internet com Bootstrap
+                                </p>
+                                <cite>
+                                    <img src="assets/dio.png" alt="Foto do site Digital Innovation One">
+                                    Digital Innovation One
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+        </section>
+
+        <div class="divider-1"></div>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container grid">
+
+                <div class="text">
+                    <h2 class="title">Entre em contato comigo!</h2>
+                    <a href="https://api.whatsapp.com/send?phone=+5581995228060&text=Olá, Lucas!" class="button"
+                        target="_blank">
+                        <i class="icon-whatsapp"></i>
+                        Entrar em contato
+                    </a>
+                </div>
+
+                <div class="links">
+                    <ul class="grid">
+                        <li>
+                            <i class="icon-phone"></i>
+                            81 99522-8060
+                        </li>
+                        <li>
+                            <i class="icon-map-pin"></i>
+                            Recife, PE
+                        </li>
+                        <li>
+                            <i class="icon-mail">
+
+                            </i>
+                            lucasguilheme.31@gmail.com
+                        </li>
                     </ul>
-                </article>
-        </main>
-    </body>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider-2"></div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="section">
+        <div class="container grid">
+            <div class="brand">
+                <a class='logo logo-alt' href="#about">Lucas<span> Moreira</span></a>
+                <p>Desenvolvido por Lucas Moreira</p>
+            </div>
+
+            <div class="social">
+                <a href="https://github.com/cataputltaazul" target="_blank">
+                    <i class="icon-github"></i>
+                </a>
+                <a href="mailto:lucasguilheme.31@gmail.com" target="_blank">
+                    <i class="icon-mail"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#about" class="back-to-top">
+        <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN.JS -->
+    <script src="main.js"></script>
+
+</body>
 
 </html>
