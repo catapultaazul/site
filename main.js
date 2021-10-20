@@ -105,3 +105,47 @@ function activateMenuAtCurrentSection() {
 window.addEventListener('scroll', function () {
     activateMenuAtCurrentSection()
 })
+
+// DARK MODE
+function changeMode(){
+    changeClass();
+    changeText();
+}
+
+function changeText(){
+    if(body.classList.contains('dark-mode')){
+    button.innerHTML = '<i class="icon-sun"></i>'
+    }else{
+        button.innerHTML = '<i class="icon-moon-fill"></i>'
+    }
+    return;
+}
+
+function changeClass(){
+    button.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode');
+    logo.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    about.classList.toggle('dark-mode');
+    courses.classList.toggle('dark-mode');
+    knowledge.classList.toggle('dark-mode');
+    contact.classList.toggle('dark-mode');
+    for (const element of title) {
+        element.classList.toggle('dark-mode')
+}
+}
+
+const button = document.getElementById('mode-selector');
+const body = document.getElementsByTagName('body')[0];
+const logo = document.getElementById('logo');
+const menu  = document.querySelector('nav.show .menu')
+const about = document.getElementById('about')
+const courses = document.getElementById('courses')
+const title = document.querySelectorAll('.title');
+const knowledge = document.getElementById('knowledge');
+const contact = document.getElementById('contact');
+
+ 
+
+button.addEventListener('click', changeMode)
+

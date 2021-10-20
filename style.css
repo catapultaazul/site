@@ -51,10 +51,20 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+
+.dark-mode{
+    color: white;
+}
+
 .title{
     font: 700 1.875rem var(--title-font);
-    color: var(--title-color);
     -webkit-font-smoothing: auto;
+    color: var(--title-color);
+}
+
+
+.title.dark-mode{
+    color:white;
 }
 
 .button{
@@ -102,6 +112,7 @@ body{
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
+    
 }
 
 #header.scroll{
@@ -109,11 +120,20 @@ body{
 }
 
 
+#header.dark-mode{
+    background-color: rgb(39, 37, 37);
+}
+
 .logo{
     font: 700 1.31rem "Poppins", sans-serif;
     color: var(--title-color);
-    
 }
+
+
+.logo.dark-mode{
+    color: white;
+}
+
 
 .logo span{
     color: var(--base-color);
@@ -209,13 +229,25 @@ nav .menu ul{
     display: none;
 }
 
+nav button{
+    background-color: var(--base-color);
+    border-radius: 15px;
+    padding: .3rem;
+    border: 0;
+    cursor: pointer;
+}
+
+nav button{
+    color: white;
+}
+
 /* MOSTRAR MENU */
 
 nav.show .menu{
     opacity: 1;
     visibility: visible;
-
     background: var(--body-color);
+    
     height: 100vh;
     width: 100vw;
     
@@ -228,6 +260,12 @@ nav.show .menu{
 }
 
 
+
+nav.show .menu.dark-mode{
+    background-color:rgb(39, 37, 37);
+}
+
+
 nav.show .menu ul{
     display: grid;
 }
@@ -235,6 +273,8 @@ nav.show .menu ul{
 nav ul.grid{
     gap: 4rem;
 }
+
+
 
 /* -------------TOGGLE MENU ----------- */
 .toggle{
@@ -263,9 +303,10 @@ nav.show div.icon-close{
 }
 
 /* --------------ABOUT----------- */
-#about{
-    background-color:white;
+#about.dark-mode{
+    background-color: rgb(75, 73, 73);
 }
+
 
 #about .container{
     margin:0;
@@ -287,6 +328,10 @@ nav.show div.icon-close{
 }
 
 /* =========Knowledge================  */
+#knowledge.dark-mode{
+    background-color: rgb(39, 37, 37);
+}
+
 .cards .grid{
     gap: 1.5rem;
 }
@@ -316,9 +361,8 @@ nav.show div.icon-close{
 }
 
 /* ------------------COURSES --------------- */
-
-#courses{
-    background: white;
+#courses.dark-mode{
+    background-color: rgb(75, 73, 73);
 }
 
 #courses .container{
@@ -342,8 +386,9 @@ nav.show div.icon-close{
     position: relative;
     text-indent: 1.875rem;
     margin-bottom: 1.5rem;
-    color: var(--title-color);
+    
 }
+
 
 #courses blockquote p span {
     font: 700 3rem serif;
@@ -385,6 +430,9 @@ nav.show div.icon-close{
 
 
 /* ===========CONTACT============================= */
+#contact.dark-mode{
+    background-color: rgb(39, 37, 37);
+}
 
 #contact .grid{
     gap: 4rem;
@@ -412,6 +460,7 @@ nav.show div.icon-close{
 #contact ul li i{
     color: var(--base-color)
 }
+
 
 #contact .links a{
     display:inline-block;
@@ -480,6 +529,7 @@ footer .social a:hover{
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* RESPONSIVE */
 @media (min-width: 1200px) {
